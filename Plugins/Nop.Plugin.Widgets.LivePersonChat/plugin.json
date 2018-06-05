@@ -1,0 +1,13 @@
+{
+  "Group": "Widgets",
+  "FriendlyName": "Product Detail Message",
+  "SystemName": "Widgets.ProductDetailMessage",
+  "Version": "1.40",
+  "SupportedVersions": [ "4.00" ],
+  "Author": "Nitendra Godare",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.ProductDetailMessage.dll",
+  "Description": "This plugin allows you to show message on product detail page.",
+  "LimitedToStores": [],
+  "LimitedToCustomerRoles": []
+}
