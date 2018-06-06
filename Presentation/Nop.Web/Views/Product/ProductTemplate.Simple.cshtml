@@ -44,7 +44,7 @@
 }
 <!--product breadcrumb-->
 @section Breadcrumb
-{
+    {
     @await Html.PartialAsync("_ProductBreadcrumb", Model.Breadcrumb)
 }
 @await Component.InvokeAsync("Widget", new { widgetZone = "productdetails_after_breadcrumb", additionalData = Model.Id })
@@ -65,6 +65,14 @@
                                 @Model.Name
                             </h1>
                         </div>
+
+                        @if (!string.IsNullOrEmpty(Model.Author))
+                        {
+                            <div class="short-description">
+                                <b>Author: </b> @Html.Raw(Model.Author)
+                            </div>
+                        }
+
                         @if (!string.IsNullOrEmpty(Model.ShortDescription))
                         {
                             <div class="short-description">

@@ -1175,6 +1175,7 @@ namespace Nop.Web.Factories
             {
                 Id = product.Id,
                 Name = product.GetLocalized(x => x.Name),
+                Author= product.GetLocalized(x => x.Author),
                 ShortDescription = product.GetLocalized(x => x.ShortDescription),
                 FullDescription = product.GetLocalized(x => x.FullDescription),
                 MetaKeywords = product.GetLocalized(x => x.MetaKeywords),
